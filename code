@@ -1,0 +1,40 @@
+
+package primenumber;
+
+public class Primenumber {
+
+    public static boolean isitprime(int number) {
+
+for(int i = 2 ; i < number;i++)     {
+    
+    
+    if(number % i == 0) {
+        
+        return false;
+        
+    }
+    
+}    
+        return true;
+        
+        
+    }
+    
+    
+    
+    public static void main(String[] args) {
+        
+        for(int i = 2 ; i < 1000 ; i++) {
+            
+            
+            if (isitprime(i)) {
+                
+                System.out.println(i);
+            }
+        }
+        
+        
+
+    }
+    
+}
